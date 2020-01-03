@@ -1,4 +1,4 @@
-package com.asuraiv.msa.foo;
+package com.asuraiv.foo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

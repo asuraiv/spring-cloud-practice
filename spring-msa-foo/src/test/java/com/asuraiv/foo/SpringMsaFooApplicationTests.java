@@ -1,4 +1,4 @@
-package com.asuraiv.msa.foo;
+package com.asuraiv.foo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,13 +1,13 @@
-package com.asuraiv.msa.foo;
+package com.asuraiv.bar;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringMsaFooApplication {
+public class SpringMsaBarApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringMsaFooApplication.class, args);
+		SpringApplication.run(SpringMsaBarApplication.class, args);
 	}
 
 }
