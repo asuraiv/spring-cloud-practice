@@ -1,4 +1,3 @@
 rootProject.name = 'spring-cloud-practice'
-include 'spring-cloud-zipkin'
 include 'spring-msa-foo'
 include 'spring-msa-bar'

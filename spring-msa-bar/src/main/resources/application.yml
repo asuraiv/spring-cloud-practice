@@ -1,0 +1,7 @@
+server:
+  port: 20081
+
+logging:
+  level:
+    org.springframework.boot.autoconfigure.logging: ERROR
+
