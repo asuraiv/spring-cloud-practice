@@ -48,7 +48,14 @@ subprojects {
 
 	dependencies {
 		implementation 'org.springframework.boot:spring-boot-starter-web'
-		implementation 'org.springframework.boot:spring-boot-starter-logging'
+//		implementation 'org.springframework.boot:spring-boot-starter-logging'
+
+		implementation 'org.springframework.cloud:spring-cloud-starter-zipkin'
+		implementation 'org.springframework.cloud:spring-cloud-starter-sleuth'
+
+		compile "org.projectlombok:lombok"
+
+		annotationProcessor "org.projectlombok:lombok"
 
 		testImplementation('org.springframework.boot:spring-boot-starter-test') {
 			exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'

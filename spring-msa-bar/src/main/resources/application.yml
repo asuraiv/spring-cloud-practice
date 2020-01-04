@@ -1,7 +1,19 @@
 server:
-  port: 20081
+  port: 20082
 
-logging:
-  level:
-    org.springframework.boot.autoconfigure.logging: ERROR
+spring:
+  application:
+    name: msa-bar-app
+  zipkin:
+    baseUrl: http://127.0.0.1:9411/
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 1.0
+
+sample:
+  zipkin:
+    enabled: true
+
+org.springframework.boot.autoconfigure.logging: ERROR
 
