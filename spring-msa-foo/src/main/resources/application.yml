@@ -11,10 +11,6 @@ spring:
     sampler:
       probability: 1.0
 
-sample:
-  zipkin:
-    enabled: true
-
 logging:
   level:
     org.springframework.boot.autoconfigure.logging: ERROR
