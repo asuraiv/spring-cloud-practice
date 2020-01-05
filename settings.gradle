@@ -1,3 +1,5 @@
 rootProject.name = 'spring-cloud-practice'
-include 'spring-msa-foo'
+include 'spring-msa-foo-a'
+include 'spring-msa-foo-b'
 include 'spring-msa-bar'
+include 'spring-eureka-server'

@@ -1,9 +1,9 @@
 server:
-  port: 20082
+  port: 20083
 
 spring:
   application:
-    name: msa-bar-app
+    name: bar-app
   zipkin:
     baseUrl: http://127.0.0.1:9411/
   sleuth:
@@ -11,9 +11,29 @@ spring:
     sampler:
       probability: 1.0
 
-#sample:
-#  zipkin:
-#    enabled: true
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#    leaseRenewalIntervalInSeconds: 1
+#    leaseExpirationDurationInSeconds: 2
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka
+#    fetch-registry: true
+#    registry-fetch-interval-seconds: 2
+#    healthcheck:
+#      enabled: false
+#    register-with-eureka: false
+
+foo-app:
+  ribbon:
+    ServerListRefreshInterval: 1000
+    listOfServers: localhost:20081,localhost:20082
+
+ribbon:
+  eureka:
+    enabled: false
+  eager-load:
+    clients: foo-app
 
 org.springframework.boot.autoconfigure.logging: ERROR
-
