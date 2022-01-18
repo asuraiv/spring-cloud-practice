@@ -1,4 +1,4 @@
-package com.asuraiv.foo;
+package com.asuraiv.baz;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class SpringMsaFooApplicationB {
+public class SpringMsaBazApplication {
 
 	@Bean
 	public RestTemplate restTemplate() {
@@ -16,7 +16,7 @@ public class SpringMsaFooApplicationB {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringMsaFooApplicationB.class, args);
+		SpringApplication.run(SpringMsaBazApplication.class, args);
 	}
 
 }

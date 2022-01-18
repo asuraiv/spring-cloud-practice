@@ -7,14 +7,14 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 @Component
-public class BarAdapter {
+public class BazAdapter {
 
 	@Autowired
 	private RestTemplate restTemplate;
 
 	public String receiveAGreet() {
 
-		ResponseEntity<String> response = restTemplate.getForEntity("http://127.0.0.1:20083/bar/receive-a-greet", String.class);
+		ResponseEntity<String> response = restTemplate.getForEntity("http://127.0.0.1:20082/baz/receive-a-greet", String.class);
 
 		if(!HttpStatus.OK.equals(response.getStatusCode())) {
 			throw new RuntimeException("Error occur during greeting to bar");

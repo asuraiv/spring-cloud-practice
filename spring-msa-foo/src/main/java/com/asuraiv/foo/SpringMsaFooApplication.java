@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class SpringMsaFooApplicationA {
+public class SpringMsaFooApplication {
 
 	@Bean
 	public RestTemplate restTemplate() {
@@ -16,7 +16,7 @@ public class SpringMsaFooApplicationA {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringMsaFooApplicationA.class, args);
+		SpringApplication.run(SpringMsaFooApplication.class, args);
 	}
 
 }

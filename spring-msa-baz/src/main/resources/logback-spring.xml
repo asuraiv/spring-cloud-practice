@@ -3,7 +3,7 @@
 
     <springProperty scope="context" name="appName" source="spring.application.name"/>
 
-    <property name="TRACE_INFO" value="[${appName},%X{X-B3-TraceId},%X{X-B3-SpanId},%X{X-Span-Export}]"/>
+    <property name="TRACE_INFO" value="[${appName},%X{X-B3-TraceId},%X{X-B3-SpanId}}]"/>
     <property name="BASIC_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight(%-5level) [%thread] %cyan(%-40.40logger{39})[%L] : %msg%n"/>
     <property name="TRACE_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight(%-5level) %yellow(${TRACE_INFO}) [%thread] %cyan(%-40.40logger{39})[%L] : %msg%n"/>
 
